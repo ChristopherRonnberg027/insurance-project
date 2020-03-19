@@ -94,7 +94,7 @@ h2{
     position: relative;
     right: 6rem;
     bottom: 4rem;
-    margin: 25%;
+    margin: 6rem;
     background-color: white;
     border-radius: 2rem;
     grid-column: 2 / 3;
@@ -103,14 +103,14 @@ h2{
 
 .familypic{
     position: relative;
-    bottom: 14.1rem;
+    bottom: 13.6rem;
     right: 17rem;
     grid-column: 3 / 4;
     grid-row: 4 / 5;
-    background-image: url("/img/family.png");
+    background-image: url("/img/croped_family.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 90%;
+    background-size: 100%;
     height: 25rem;
     width: 25rem;
 
@@ -187,11 +187,11 @@ h2{
 }
 
 .grid-container3{
-    padding: 10%;
+    padding: 7rem;
     background-color: rgb(153,153,153);
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-gap: 10rem;
 }
 
@@ -202,13 +202,16 @@ h2{
 }
 
 .grid-container3 h5{
-    padding-top: 6%;
-    padding-right: 10%;
+    padding-top: 1rem;
+    padding-right: 1rem;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
 }
 
 .inbetweenbox{
+    width: 60%;
+    position: relative;
+    bottom:10rem;
     margin: 1rem;
     display: flex;
     justify-content: space-between;
@@ -219,30 +222,41 @@ h2{
 }
 
 .inbetweenbox h5{
-    margin-right: 10%;
-    margin-left: 10%;
+    margin-right: 2rem;
+    margin-left: 2rem;
     font-size: 0.8rem;
 }
 
 .infobox3{
-    display: flex;
-    flex-direction: column;
-    background-color: tomato;
+    width:18rem;
+    background-color: white;
     border: 10rem;
 }
 
-.colorbox3{
-    background-color: teal;
+.infobox3:nth-child(1) .colorbox3{
+    background-color: rgb(199, 221, 234);
 }
 
-.infobox3:nth-child(2) img{
+.infobox3:nth-child(2) .colorbox3{
+    background-color: rgb(250, 177, 49);
+}
+
+.infobox3:nth-child(3) .colorbox3{
+    background-color: rgb(241, 121, 72);
+}
+
+.colorbox3 img{
+    padding: 0.2rem;
     text-align: center;
-    width: 1rem;
-    height: 1rem;
+    width: 20rem;
     background-position: center;
 }
 
+
+
 .wrapper4{
+    position: relative;
+    bottom: 20rem;
     width: 70%;
 }
 

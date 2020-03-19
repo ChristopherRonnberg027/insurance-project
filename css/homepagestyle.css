@@ -1,0 +1,42 @@
+.wrapper{
+    background-color: gray;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.toptop{
+    width: 80%rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.intro{
+    background-color: rgb(168, 224, 241);
+}
+
+.intro2{
+}
+
+.introbox{
+
+}
+
+.upperbox{
+    background-color: rgb(243, 100, 49);
+}
+
+.downerbox{
+    background-color: rgb(250, 193, 6);
+}
+
+.intro2box{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
