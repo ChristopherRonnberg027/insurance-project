@@ -2,21 +2,15 @@ body{
     width: 100vw;
     font-family: "Helvetica";
 }
-/*
-p{
-    margin-block-start: 1rem;
-    margin-block-end: 1rem;
-}
-*/
 
 h1, h2, h6{
-
     font-family: "Times";
-    font-weight: bolder;
 }
+
 
 h1, h2{
     letter-spacing: -0.12rem;
+    line-height: 1em;
 }
 
 h1{
@@ -38,6 +32,13 @@ h5{
 h2{
     color: White;
     font-size: 3em;
+}
+
+p{
+    font-family: "Helvetica";
+    font-weight: 900;
+    font-size: 0.7rem;
+    letter-spacing: -0.1rem;
 }
 
 .characterwhite{
@@ -103,7 +104,7 @@ h2{
 
 .familypic{
     position: relative;
-    bottom: 13.6rem;
+    bottom: 14.4rem;
     right: 17rem;
     grid-column: 3 / 4;
     grid-row: 4 / 5;
@@ -113,7 +114,25 @@ h2{
     background-size: 100%;
     height: 25rem;
     width: 25rem;
+}
 
+.introbox1 .joinbutton{
+    position: relative;
+    top:2rem;
+    background-color: white;
+    width:9rem;
+    height: 3rem;
+    border-radius: 1.5rem;
+    box-shadow: 0.1rem 0.2rem rgba(0,0,0,0.5);
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    
+}
+
+.joinbutton p{
+    position: relative;
+    top:0.2rem;
+    text-align: center;
 }
 
 .introbox1:nth-child(2){
@@ -191,7 +210,7 @@ h2{
     background-color: rgb(153,153,153);
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 60% 40%;
     grid-gap: 10rem;
 }
 
@@ -208,33 +227,60 @@ h2{
     grid-row: 1 / 2;
 }
 
+
+.grid-container3 .joinbutton{
+    position: relative;
+    top:17rem;
+    background-color: white;
+    box-shadow: 0.1rem 0.2rem rgba(0,0,0,0.5);
+    width:9rem;
+    height: 3rem;
+    border-radius: 1.5rem;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+
+}
+
 .inbetweenbox{
     width: 60%;
     position: relative;
-    bottom:150rem;
+    bottom:120rem;
     margin: 1rem;
     display: flex;
     justify-content: space-between;
 }
 
 .inbetweenbox h5, h6{
+    position: relative;
+    bottom: 1rem;
     text-align: center;
+}
+
+.inbetweenbox h6{
+    height: 1px;
+    margin-block-start: 0.0001em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
 
 .inbetweenbox h5{
     margin-right: 2rem;
     margin-left: 2rem;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
 }
 
 .infobox3{
-    width:18rem;
+    width:17rem;
     background-color: white;
+    border-radius: 0.5rem;
     border: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .infobox3:nth-child(1) .colorbox3{
-    width:18rem;
     background-color: rgb(199, 221, 234);
 }
 
@@ -246,45 +292,66 @@ h2{
     background-color: rgb(241, 121, 72);
 }
 
+.infobox3 .colorbox3{
+    position: relative;
+    bottom: 2rem;
+}
+
+.colorbox3{
+    height: 10rem;
+    width:15rem;
+}
+
 .colorbox3 img{
     position: relative;
-    top:0.43rem;
     padding: 0.2rem;
+    left: 1.2rem;
     text-align: center;
-    width: 18rem;
+    width: 13rem;
     background-position: center;
 }
 
-
-
 .wrapper4{
-    position: relative;
-    bottom: 20rem;
+    /* position: relative;
+    bottom: 20rem; */
     width: 70%;
 }
 
 .grid-container4{
     height: 50rem;
     background-color: rgb(250, 177, 49);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /*display: grid;
+    grid-template-columns: 20% 40% 40% 20%;
+    grid-template-rows: 20% 40% 40% 20%;*/
 }
 
-.infobox4{
-    position: relative;
-    top: 15rem;
+.infobox4 p{
+    text-align: center;
+    width: 50rem;
+    color:rgba(0,0,0, 0.5);
+    font-family: "Helvetica";
+    font-weight: bold;
+    font-size: 1em;
+    line-height: 1.8em;
+    letter-spacing: 0.01rem;
 }
 
 .grid-container4 h2{
-    margin-left: 20rem;
-    margin-right: 20rem;
     text-align: center;
 }
 
+/*
 .grid-container4 h5{
     margin-left: 20rem;
     margin-right: 20rem;
     line-height: 1.1em;
     text-align: center;
 }
+*/
 
 .wrapper5{
     width: 70%;
@@ -317,14 +384,13 @@ h2{
 }
 
 .infobox5:nth-child(1) h2{
+    position: relative;
+    top:2rem;
+    height: 0.1rem;
     font-size: 3em;
-    margin-left: 13%;
-    margin-right: 13%;
     text-align: center;
-    color: black;
+    color: rgb(0, 0, 0);
 }
-
-
 
 
 .infobox5 h2{
@@ -364,7 +430,6 @@ h2{
 .grid-container6 h5{
     color: rgb(51,48,47);
     text-align: center;
-    padding-bottom: 1rem;
 }
 
 .wrapper7{
