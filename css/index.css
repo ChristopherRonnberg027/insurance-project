@@ -1,0 +1,39 @@
+body{
+    max-width: 100wv;
+    min-width: 1500px;
+    font-family: "Helvetica";
+}
+
+header,nav,main,aboutbox,infobox,nav2,footer,floater{
+    width: 70%;
+}
+
+.bigwrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgb(235, 235, 235);
+}
+
+h1, h2, h6{
+    font-family: "Times";
+}
+
+
+h1, h2{
+    letter-spacing: -0.12rem;
+    line-height: 1em;
+}
+
+h1{
+    font-size: 3.5rem;
+}
+
+p{
+    color:rgba(0,0,0, 0.5);
+    font-family: "Helvetica";
+    font-weight: bold;
+    font-size: 1em;
+    line-height: 1.8em;
+}
