@@ -48,6 +48,10 @@ nav{
     justify-content: space-evenly;
 }
 
+body > div > nav > p{
+    color:black;
+}
+
 nav p{
     text-align: center;
 }
@@ -66,12 +70,23 @@ box1{
     grid-row: 1 / 3;
     display: grid;
     grid-template-columns: 20% 30% 30% 20%;
-grid-template-rows:  20% 30% 30% 20%;
+    grid-template-rows:  20% 30% 30% 20%; 
 }
 
-box1 h1,box1 p{
-    grid-column: 1 / 2;
+box1 h1{
+    grid-column: 2 / 4;
     grid-row: 1 / 2;
+}
+
+box1 p{
+    font-size: 0.8rem;
+    margin-top: 4rem;
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+}
+
+.characterwhite{
+    color:white;
 }
 
 box1 article{
@@ -80,15 +95,29 @@ box1 article{
 }
 
 box1 article img{
-    width: 20rem;
+    margin-left: -1rem;
+    width: 18rem;
 }
 
-.joinbutton{
+box1 .joinbutton{
+    margin-top: 3rem;
+    grid-column: 2 / 3;
+    grid-row: 3 / 5;
     background-color: white;
     width:8rem;
     height: 2rem;
     border-radius: 1.5rem;
-    box-shadow: 0.1rem 0.2rem rgba(0,0,0,0.5);
+    box-shadow: 0.1rem 0.1rem rgba(0,0,0,0.1);
+}
+
+
+box1 .joinbutton p{
+    color: black;
+    margin-block-start: 0.7em;
+    margin-block-end: 0em;
+    text-align: center;
+    font-size: 0.6rem;
+    font-weight: 800;
 }
 
 box2{
@@ -103,6 +132,18 @@ smallbox2{
     text-align: center;
 }
 
+smallbox2 h2{
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+smallbox2 p{
+    font-size: 0.8rem;
+    margin-top: 5rem;
+    margin-block-start: 6em;
+    margin-block-end: 0em;
+}
+
 smallbox2:nth-child(1){
     background-color: rgb(241, 121, 72);
     grid-column: 1 / 3;
@@ -114,3 +155,199 @@ smallbox2:nth-child(2){
     grid-column: 1 / 3;
     grid-row: 2 / 3;
 }
+
+a{
+    text-decoration: none;
+}
+
+main{
+    height: 40rem;
+    background-color: rgb(153,153,153);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 60% 40%;
+    grid-gap: 1rem;
+}
+
+main h1{
+    margin: 5rem;
+    color: white;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+main p:nth-child(2){
+    font-size: 0.8rem;
+    margin-right: 10rem;
+    margin-top: 5rem;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+main .joinbutton{
+    position: relative;
+    left: 0.2rem;
+    bottom:6rem;
+    margin-left: 5rem;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    background-color: white;
+    width:8rem;
+    height: 2rem;
+    border-radius: 1.5rem;
+    box-shadow: 0.1rem 0.1rem rgba(0,0,0,0.1);
+}
+
+
+main .joinbutton p{
+    color: black;
+    margin-block-start: 0.7em;
+    margin-block-end: 7em;
+    text-align: center;
+    font-size: 0.6rem;
+    font-weight: 800;
+}
+
+aboutbox{
+    height: 40rem;
+    background-color: rgb(250, 177, 49);
+}
+
+aboutbox h1{
+    margin-top: 15rem;
+    color:white;
+    text-align: center;
+}
+
+aboutbox p{
+    text-align: center;
+    font-size: 0.8rem;
+    margin-right: 15rem;
+    margin-left: 15rem;
+    margin-right: 15rem;
+}
+
+infobox{
+    height: 40rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr 1fr;
+}
+
+figure{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+
+figure p{
+    text-align: center;
+    margin:5rem;
+}
+
+figure h2{
+    margin:2rem;
+    font-size: 2rem;
+    color:rgba(0,0,0, 0.5);
+}
+
+figure:nth-child(1) h2{
+    font-size: 2.5rem;
+    text-align: center;
+    position: relative;
+    top: 8rem;
+    color: black;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+figure:nth-child(1){
+    background-color: rgb(199, 221, 234);
+}
+
+figure:nth-child(2),figure:nth-child(4),figure:nth-child(6){
+    background-color:white;
+}
+
+figure:nth-child(5){
+    background-color: rgb(241, 121, 72);
+}
+
+nav2{
+    background-color: rgb(153,153,153);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 5rem;
+}
+
+nav2 p{
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+nav2 article img{
+    margin-top: 0.8rem;
+    height: 1rem;
+}
+
+footer{
+    height: 20rem;
+    background-color: rgb(119,117,116);
+}
+
+floater{
+    position: relative;
+    bottom: 116rem;
+    width: 60rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+floater article{
+    text-align: center;
+    background-color: white;
+    width: 15rem;
+    height: 20rem;
+    border-radius: 0.5rem;
+    box-shadow: 0.1rem 0.3rem 0.8rem rgba(0,0,0,0.3);
+}
+
+floater article background,floater article p,floater article h3{
+    position: relative;
+    bottom:2rem;
+}
+
+floater article h3{
+    margin-block-start: 0.4em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+floater article p{
+    margin-block-start: 0.4em;
+    font-size: 0.8rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+floater article background img{
+    height: 10rem;
+}
+
+floater article:nth-child(1) background img{
+    background-color: rgb(199, 221, 234);
+}
+
+floater article:nth-child(2) background img{
+    background-color: rgb(250, 177, 49);
+}
+
+floater article:nth-child(3) background img{
+    background-color: rgb(241, 121, 72);
+}
+
