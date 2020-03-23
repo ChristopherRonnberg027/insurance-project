@@ -94,7 +94,7 @@ main{
     height: 90rem;
     background-color: rgb(119,117,116);
     display: grid;
-    grid-template-columns: 10% 30% 10% 30% 20%;
+    grid-template-columns: 20% 30% 30% 20%;
     grid-template-rows: 5% 25% 25% 45%;
 }
 
@@ -177,7 +177,10 @@ section img:nth-child(2){
     width: 8rem;
     /*transition: 0.2rem 2s ease-out;*/
     transition: bottom 0.5s;
+
 }
+
+
 
 section img:nth-child(2):hover{
     bottom: 22.5rem;
@@ -190,6 +193,7 @@ footer figure{
     height: 12rem;
     background-color: rgb(250, 177, 49);
     transition: background-color 0.5s;
+    box-shadow: 0.1rem 0.2rem rgba(0,0,0,0.5);
 }
 
 footer figure:hover{
