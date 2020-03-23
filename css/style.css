@@ -4,7 +4,7 @@ body{
     font-family: "Helvetica";
 }
 
-header,nav,main,footer{
+header,nav,main,footer,section{
     width: 70%;
 }
 
@@ -72,19 +72,30 @@ nav{
 }
 
 nav p{
+    color:rgba(0,0,0, 0.5);
     text-align: center;
+    transition: color 0.5s;
+}
+
+nav p:hover{
+    color: black;
 }
 
 nav p:nth-child(4){
     color: black;
+    transition: color 0.5s;
+}
+
+nav p:nth-child(4):hover{
+    color:rgba(0,0,0, 0.5);
 }
 
 main{
-    height: 40rem;
+    height: 90rem;
     background-color: rgb(119,117,116);
     display: grid;
     grid-template-columns: 10% 30% 10% 30% 20%;
-    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-rows: 5% 25% 25% 45%;
 }
 
 main h1, main p{
@@ -137,16 +148,75 @@ aside{
     position: relative;
     left: 14.5rem;
     background-color: white;
+    transition: background-color 0.5s;
     width:8rem;
     height: 2rem;
     border-radius: 1.5rem;
     box-shadow: 0.1rem 0.2rem rgba(0,0,0,0.5);
 }
 
+.sendmessage:hover{
+    background-color: rgb(250, 177, 49);
+}
+
 .sendmessage p{
-    
     padding-top: 0.5rem;
     text-align: center;
     font-size: 0.6rem;
     font-weight: 790;
 }
+
+section img:nth-child(1){
+    width: 68.58rem;
+}
+
+section img:nth-child(2){
+    position: relative;
+    bottom:22rem;
+    left: 28rem;
+    width: 8rem;
+    /*transition: 0.2rem 2s ease-out;*/
+    transition: bottom 0.5s;
+}
+
+section img:nth-child(2):hover{
+    bottom: 22.5rem;
+}
+
+footer figure{
+    position: relative;
+    bottom:35rem;
+    width: 22rem;
+    height: 12rem;
+    background-color: rgb(250, 177, 49);
+    transition: background-color 0.5s;
+}
+
+footer figure:hover{
+    background-color: rgb(241, 121, 72);
+}
+
+footer figure h1{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0.1rem;
+    margin-inline-end: 0.1rem;
+    margin-left: 1rem;
+    padding-top: 1rem;
+    color: white;
+}
+
+footer figure p{
+    color: white;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    margin-left: 1.2rem;
+}
+
+footer{
+    position: relative;
+    bottom: 55rem;
+}
+
